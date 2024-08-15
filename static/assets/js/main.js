@@ -1,38 +1,56 @@
-// Dynamic
-document.addEventListener("DOMContentLoaded", () => {
-  if (
-    localStorage.getItem("dy") === null ||
-    localStorage.getItem("dy") === undefined
-  ) {
-    localStorage.setItem("dy", "false");
-  }
-});
+// Static
+if (
+  localStorage.getItem("dy") === null ||
+  localStorage.getItem("dy") === undefined
+) {
+  localStorage.setItem("dy", "false");
+}
 
 // Nav
 const nav = document.querySelector(".fixed-nav-bar");
 
 if (nav) {
   const themeId = localStorage.getItem("theme");
-  let LogoUrl = "/assets/media/favicon/main.png"; // Declare LogoUrl once
+  let LogoUrl = "/assets/media/favicon/blank.png"; // Declare LogoUrl once
   if (themeId === "Inverted") {
-    LogoUrl = "/assets/media/favicon/main-inverted.png";
+    LogoUrl = "/assets/media/favicon/blank.png";
   }
+  
+  // Paths to the icons
+  const EmblemIcon = "/assets/media/favicon/main.png";
+  const AccountIcon = "/assets/media/favicon/account.png";
+  const DashboardIcon = "/assets/media/favicon/dashboard.png";
+  const CoursesIcon = "/assets/media/favicon/courses.png";
+  const CalendarIcon = "/assets/media/favicon/calendar.png";
+  const InboxIcon = "/assets/media/favicon/inbox.png";
+  const HistoryIcon = "/assets/media/favicon/history.png";
+  const StudioIcon = "/assets/media/favicon/studio.png";
+  const MasteryIcon = "/assets/media/favicon/mastery.png";
+  const MediaIcon = "/assets/media/favicon/media.png";
+  const HelpIcon = "/assets/media/favicon/help.png";
+  const CollapseIcon = "/assets/media/favicon/collapse.png";
+  
   const html = `
-    <div class="fixed-nav-bar-container">
+        <div class="fixed-nav-bar-container">
       <div id="icon-container">
         <a class="icon" href="/./"><img alt="nav" id="INImg" src="${LogoUrl}"/></a>
       </div>
     </div>
     <div class="fixed-nav-bar-right">
-      <a class="navbar-link" href="/./gm"><i class="fa-solid fa-gamepad navbar-icon"></i><an>Ga</an><an>mes</an></a>
-      <a class="navbar-link" href="/./as"><i class="fa-solid fa-phone navbar-icon"></i><an>Ap</an><an>ps</an></a>
-      <a class="navbar-link" href="/./ts"><i class="fa-solid fa-folder navbar-icon"></i><an>To</an><an>ols</an></a>
-      ${window.top.location.pathname === "/ta" ? "" : '<a class="navbar-link" href="/./ta"><i class="fa-solid fa-laptop navbar-icon"></i><an>Ta</an><an>bs</an></a>'}
-      <a class="navbar-link" href="/./st"><i class="fa-solid fa-gear navbar-icon settings-icon"></i><an>Set</an><an>tings</an></a>
+      <a class="navbar-link" href="/./"><img src="${EmblemIcon}" alt="Emblem" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${AccountIcon}" alt="Account" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${DashboardIcon}" alt="Dashboard" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${CoursesIcon}" alt="Courses" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${InboxIcon}" alt="Inbox" Class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${HistoryIcon}" alt="History" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${StudioIcon}" alt="Studio" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./gm"><img src="${MasteryIcon}" alt="Mastery" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./as"><img src="${MediaIcon}" alt="Media" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./ts"><img src="${HelpIcon}" alt="Help" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${CollapseIcon}" alt="Collapse" class="navbar-img" /></a>
     </div>`;
   nav.innerHTML = html;
 }
-
 // Themes
 const themeid = localStorage.getItem("theme");
 const themeEle = document.createElement("link");
