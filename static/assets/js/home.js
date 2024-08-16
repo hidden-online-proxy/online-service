@@ -14,7 +14,7 @@ if (
   const popup = open("about:blank", "_blank");
   if (!popup || popup.closed) {
     alert(
-  "By using Canvas Timeline® services, you confirm you have read and agreed to the terms listed in our Terms of Service and Privacy Policy, which can be found on the bottom of the account page."
+  "By using Canvas Timeline® services, you confirm you have read and agreed to the terms listed in our Terms of Service and Privacy Policy, which can be found on the bottom of the page."
     );
 
   } else {
@@ -26,7 +26,7 @@ if (
     const name = localStorage.getItem("name") || "Dashboard";
     const icon =
       localStorage.getItem("icon") ||
-      "https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png";
+      "assets/media/favicon/canvas.png";
 
     doc.title = name;
     link.rel = "icon";
