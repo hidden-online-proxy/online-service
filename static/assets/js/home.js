@@ -190,9 +190,7 @@ SplashE.addEventListener("click", US);
 // Random URL
 function getRandomUrl() {
   const randomUrls = [
-    "https://www.desmos.com/testing/virginia/graphing",
-    "https://va-roan-psv.edupoint.com/",
-    "https://launchpad.classlink.com/rcs/",
+    "https://rcpsonline.instructure.com",
   ];
   return randomUrls[randRange(0, randomUrls.length)];
 }
