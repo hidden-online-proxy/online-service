@@ -41,6 +41,7 @@ if (nav) {
       <a class="navbar-link" href="/./"><img src="${AccountIcon}" alt="Account" class="navbar-img" /></a>
       <a class="navbar-link" href="/./"><img src="${DashboardIcon}" alt="Dashboard" class="navbar-img" /></a>
       <a class="navbar-link" href="/./"><img src="${CoursesIcon}" alt="Courses" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${CalendarIcon}" alt="Calendar" Class="navbar-img" /></a>
       <a class="navbar-link" href="/./"><img src="${InboxIcon}" alt="Inbox" Class="navbar-img" /></a>
       <a class="navbar-link" href="/./"><img src="${HistoryIcon}" alt="History" class="navbar-img" /></a>
       <a class="navbar-link" href="/./"><img src="${StudioIcon}" alt="Studio" class="navbar-img" /></a>
