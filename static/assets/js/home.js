@@ -11,8 +11,9 @@ if (
   localStorage.getItem("ab") === "true"
 ) {
   const popup = open("about:blank", "_blank");
+  if (!popup || popup.closed) {
     alert(
-  "ㅤ"
+  "Allow recommended features for a better Canvas experience."
     );
 
   } else {
