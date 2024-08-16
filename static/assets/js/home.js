@@ -12,7 +12,6 @@ if (
   localStorage.getItem("ab") === "true"
 ) {
   const popup = open("about:blank", "_blank");
-  if (!popup || popup.closed) {
   }
 }
 
