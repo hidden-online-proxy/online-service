@@ -1,51 +1,38 @@
 let inFrame;
-
 try {
   inFrame = window !== top;
 } catch (e) {
   inFrame = true;
 }
-
 if (!localStorage.getItem("ab")) localStorage.setItem("ab", true);
-
 if (
   !inFrame &&
   !navigator.userAgent.includes("Firefox") &&
   localStorage.getItem("ab") === "true"
 ) {
   const popup = open("about:blank", "_blank");
-  if (popup && !popup.closed) {
-    popup.location.href = "https://rcpsonline.instructure.com";
- }
-}
 
   } else {
     const doc = popup.document;
     const iframe = doc.createElement("iframe");
     const style = iframe.style;
     const link = doc.createElement("link");
-
     const name = localStorage.getItem("name") || "Dashboard";
     const icon =
       localStorage.getItem("icon") ||
       "assets/media/favicon/canvas.png";
-
     doc.title = name;
     link.rel = "icon";
     link.href = icon;
-
     iframe.src = location.href;
     style.position = "fixed";
     style.top = style.bottom = style.left = style.right = 0;
     style.border = style.outline = "none";
     style.width = style.height = "100%";
-
     doc.head.appendChild(link);
     doc.body.appendChild(iframe);
-
     const pLink = localStorage.getItem(encodeURI("pLink")) || getRandomUrl();
     location.replace(pLink);
-
     const script = doc.createElement("script");
     script.textContent = `
       window.onbeforeunload = function (event) {
@@ -177,15 +164,21 @@ document.addEventListener("DOMContentLoaded", event => {
 const SplashT = [
   "efficiently manage your assingments!",
 ];
-
 let SplashI = Math.floor(Math.random() * SplashT.length);
 const SplashE = document.getElementById("splash");
-
 function US() {
   SplashI = (SplashI + 1) % SplashT.length;
   SplashE.innerText = SplashT[SplashI];
 }
-
 SplashE.innerText = SplashT[SplashI];
-
 SplashE.addEventListener("click", US);
+// Random URL
+function getRandomUrl() {
+  const randomUrls = [
+    "https://rcpsonline.instructure.com",
+  ];
+  return randomUrls[randRange(0, randomUrls.length)];
+}
+function randRange(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
