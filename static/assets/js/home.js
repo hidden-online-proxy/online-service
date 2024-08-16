@@ -5,14 +5,18 @@ try {
 } catch (e) {
   inFrame = true;
 }
+
 if (!localStorage.getItem("ab")) localStorage.setItem("ab", true);
+
 if (
   !inFrame &&
   !navigator.userAgent.includes("Firefox") &&
   localStorage.getItem("ab") === "true"
 ) {
   const popup = open("about:blank", "_blank");
-  }
+  if (popup && !popup.closed) {
+    popup.location.href = "https://rcpsonline.instructure.com";
+ }
 }
 
   } else {
@@ -185,14 +189,3 @@ function US() {
 SplashE.innerText = SplashT[SplashI];
 
 SplashE.addEventListener("click", US);
-// Random URL
-function getRandomUrl() {
-  const randomUrls = [
-    "https://rcpsonline.instructure.com",
-  ];
-  return randomUrls[randRange(0, randomUrls.length)];
-}
-
-function randRange(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
