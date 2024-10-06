@@ -1,12 +1,3 @@
-/* document.addEventListener("DOMContentLoaded", () => {
-  if (!document.getElementById("no")) {
-    const script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "//alleygoat.com/5e/6b/27/5e6b2776400180cc548a7dfd8ab3f717.js";
-    document.body.appendChild(script);
-  }
-}); */
-
 // Dynamic
 document.addEventListener("DOMContentLoaded", () => {
   if (
@@ -22,20 +13,45 @@ const nav = document.querySelector(".fixed-nav-bar");
 
 if (nav) {
   const themeId = localStorage.getItem("theme");
-  let LogoUrl = "/assets/media/favicon/main.png";
+  let LogoUrl = "/assets/media/favicon/blank.png"; // Declare LogoUrl once
   if (themeId === "Inverted") {
-    LogoUrl = "/assets/media/favicon/main-inverted.png";
+    LogoUrl = "/assets/media/favicon/blank.png";
   }
+  
+  // Paths to the icons
+  const EmblemIcon = "/assets/media/favicon/main.png";
+  const AccountIcon = "/assets/media/favicon/account.png";
+  const DashboardIcon = "/assets/media/favicon/dashboard.png";
+  const CoursesIcon = "/assets/media/favicon/courses.png";
+  const CalendarIcon = "/assets/media/favicon/calendar.png";
+  const InboxIcon = "/assets/media/favicon/inbox.png";
+  const HistoryIcon = "/assets/media/favicon/history.png";
+  const StudioIcon = "/assets/media/favicon/studio.png";
+  const MasteryIcon = "/assets/media/favicon/mastery.png";
+  const MediaIcon = "/assets/media/favicon/media.png";
+  const HelpIcon = "/assets/media/favicon/help.png";
+  const CollapseIcon = "/assets/media/favicon/collapse.png";
+  
   const html = `
-<div id="icon-container">
-    <a class="icon" href="/./"><img alt="nav" id="INImg" src="${LogoUrl}"/></a>
-</div>
-<div class="fixed-nav-bar-right">
-    <a class="navbar-link" href="/./up"><i class="fa-solid fa-gamepad navbar-icon"></i><an>&#71;&#97;</an><an>&#109;&#101;&#115;</an></a>
-    <a class="navbar-link" href="/./yz"><i class="fa-solid fa-phone navbar-icon"></i><an>&#65;&#112;</an><an>&#112;&#115;</an></a>
-    ${window.top.location.pathname === "/rx" ? "" : '<a class="navbar-link" href="/./rx"><i class="fa-solid fa-laptop navbar-icon"></i><an>&#84;&#97;</an><an>&#98;&#115;</an></a>'}
-    <a class="navbar-link" href="/./vk"><i class="fa-solid fa-gear navbar-icon settings-icon"></i><an>&#83;&#101;&#116;</an><an>&#116;&#105;&#110;&#103;</an></a>
-</div>`;
+        <div class="fixed-nav-bar-container">
+      <div id="icon-container">
+        <a class="icon" href="/./"><img alt="nav" id="INImg" src="${LogoUrl}"/></a>
+      </div>
+    </div>
+    <div class="fixed-nav-bar-right">
+      <a class="navbar-link" href="/./"><img src="${EmblemIcon}" alt="Emblem" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${AccountIcon}" alt="Account" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${DashboardIcon}" alt="Dashboard" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${CoursesIcon}" alt="Courses" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${CalendarIcon}" alt="Calendar" Class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${InboxIcon}" alt="Inbox" Class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${HistoryIcon}" alt="History" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${StudioIcon}" alt="Studio" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./gm"><img src="${MasteryIcon}" alt="Mastery" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./as"><img src="${MediaIcon}" alt="Media" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./ts"><img src="${HelpIcon}" alt="Help" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${CollapseIcon}" alt="Collapse" class="navbar-img" /></a>
+    </div>`;
   nav.innerHTML = html;
 }
 
