@@ -1,11 +1,11 @@
 .column {
-   width: 145px;
+   width: 60px;
    transition: all 0.2s ease;
    cursor: pointer;
    background: var(--background-column);
    border-radius: 5px;
-   padding-left: 10px;
-   padding-right: 10px;
+   padding-left: 15px;
+   padding-right: 5px;
    padding-top: 5px;
    margin: 0;
 }
