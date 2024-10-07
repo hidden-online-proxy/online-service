@@ -1,11 +1,11 @@
 .column {
-   width: 60px;
+   width: 145px;
    transition: all 0.2s ease;
    cursor: pointer;
    background: var(--background-column);
    border-radius: 5px;
-   padding-left: 15px;
-   padding-right: 5px;
+   padding-left: 10px;
+   padding-right: 10px;
    padding-top: 5px;
    margin: 0;
 }
@@ -23,18 +23,17 @@
    width: 145px;
    height: 19px;
    font-style: normal;
-   font-weight: 800;
+   font-weight: 600;
    font-size: 18px;
    line-height: 19px;
    text-align: center;
    color: var(--text-primary);
-   text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
    padding-top: 136px;
    padding-bottom: 12px;
 }
 
 .column:hover {
-   transform: scale(1.2);
+   transform: scale(1.1);
 }
 
 .column:hover .label {
@@ -45,9 +44,10 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   gap: 2.3em;
+   gap: 2.1em;
    flex-direction: row;
    margin-top: 30px;
+   margin-left: 80px;
 }
 
 .pinned-apps {
