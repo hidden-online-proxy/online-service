@@ -58,6 +58,18 @@
   opacity: 100;
 }
 
+.search-home {
+   width: 5p;
+   height: 9px;
+	color: #2d3b45;
+	font-family: "inter", monospace;
+	font-weight: 600
+   box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.2);
+   background: var(--background-input);
+   -webkit-backdrop-filter: var(--backdrop-filter);
+   backdrop-filter: var(--backdrop-filter);
+}
+
 input {
 	padding: 10px;
 	width: 100%;
