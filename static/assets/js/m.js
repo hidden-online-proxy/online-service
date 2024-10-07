@@ -24,8 +24,8 @@ if (nav) {
   const CalendarIcon = "/assets/media/favicon/calendar.png";
   const InboxIcon = "/assets/media/favicon/inbox.png";
   const HistoryIcon = "/assets/media/favicon/history.png";
-  const StudioIcon = "/assets/media/favicon/studio.png";
   const MasteryIcon = "/assets/media/favicon/mastery.png";
+  const StudioIcon = "/assets/media/favicon/studio.png";
   const MediaIcon = "/assets/media/favicon/media.png";
   const HelpIcon = "/assets/media/favicon/help.png";
   const CollapseIcon = "/assets/media/favicon/collapse.png";
@@ -44,10 +44,10 @@ if (nav) {
       <a class="navbar-link" href="/./"><img src="${CalendarIcon}" alt="Calendar" Class="navbar-img" /></a>
       <a class="navbar-link" href="/./"><img src="${InboxIcon}" alt="Inbox" Class="navbar-img" /></a>
       <a class="navbar-link" href="/./"><img src="${HistoryIcon}" alt="History" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${MasteryIcon}" alt="Mastery" class="navbar-img" /></a>
       <a class="navbar-link" href="/./"><img src="${StudioIcon}" alt="Studio" class="navbar-img" /></a>
-      <a class="navbar-link" href="/./up"><img src="${MasteryIcon}" alt="Mastery" class="navbar-img" /></a>
-      <a class="navbar-link" href="/./yz"><img src="${MediaIcon}" alt="Media" class="navbar-img" /></a>
-      <a class="navbar-link" href="/./rx"><img src="${HelpIcon}" alt="Help" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./up"><img src="${MediaIcon}" alt="Media" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./yz"><img src="${HelpIcon}" alt="Help" class="navbar-img" /></a>
       <a class="navbar-link" href="/./"><img src="${CollapseIcon}" alt="Collapse" class="navbar-img" /></a>
     </div>`;
   nav.innerHTML = html;
