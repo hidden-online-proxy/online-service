@@ -169,23 +169,8 @@ document.addEventListener("DOMContentLoaded", event => {
     particlesJS("particles-js", particlesConfig);
   }
 });
-// Splash texts
-const SplashT = [
-  "Efficiently manage your assingments!",
-];
 
-let SplashI = Math.floor(Math.random() * SplashT.length);
-const SplashE = document.getElementById("splash");
-
-function US() {
-  SplashI = (SplashI + 1) % SplashT.length;
-  SplashE.innerText = SplashT[SplashI];
-}
-
-SplashE.innerText = SplashT[SplashI];
-
-SplashE.addEventListener("click", US);
-// Random URL
+// Cloaking URL
 function getRandomUrl() {
   const randomUrls = [
     "https://rcpsonline.instructure.com",
