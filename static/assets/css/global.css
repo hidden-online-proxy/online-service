@@ -60,10 +60,8 @@ body {
 }
 
 ::placeholder {
-	color: #2d3b45;
-	  font-size: 40px;
-	  font-family: "Inter", monospace;
-	  font-weight: 600;
+   color: var(--text-placeholder);
+   opacity: 1;
 }
 
 .main {
