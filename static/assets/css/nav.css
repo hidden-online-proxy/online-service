@@ -3,7 +3,7 @@
 }
 
 .fixed-nav-bar {
-    top: -5px;
+    top: -30px;
     left: 0;
     bottom: 0;
     width: 84px;
@@ -20,7 +20,7 @@
 
 #icon-container {
     position: absolute;
-    top: -5px;
+    top: -30px;
     left: 0px;
     width: 84px;
     height: 110px;
