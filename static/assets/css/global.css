@@ -61,8 +61,6 @@ body {
 
 ::placeholder {
 	color: #2d3b45;
-	font-family: "inter", monospace;
-	font-weight: 600
 }
 
 .main {
