@@ -1,10 +1,11 @@
-.center {
+9.center {
 	display: flex;
 	justify-content: right;
 	align-items: right;
 }
 
 .title {
+	font-weight: 800;
 	font-size: 20px;
 	color: var(--text-primary);
 	font-family: "Inter", sans-serif;
@@ -26,6 +27,7 @@
 	.title {
 		position: relative;
 		top: -5vw;
+		font-weight: bold;
 		font-size: 5vw;
 		color: var(--text-primary);
 		font-family: "Inter", sans-serif;
