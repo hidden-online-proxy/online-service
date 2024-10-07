@@ -4,6 +4,24 @@
 	align-items: right;
 }
 
+.title {
+	font-size: 4vh;
+	color: var(--text-primary);
+	font-family: "Inter", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 0px 0px 5px 5px;
+	margin-top: 15vh;
+	margin-bottom: 2vh;
+	transition: 0.35s ease;
+	text-shadow: 2px 4px 6px rgb(0, 0, 0, 0.2);
+}
+
+.title:hover {
+	transform: translateY(-5%) scale(1.03);
+	font-weight: 800;
+}
+
 @media (orientation: portrait) {
 	.title {
 		position: relative;
