@@ -5,7 +5,7 @@
 }
 
 .title {
-	font-size: 4vh;
+	font-size: 40px;
 	color: var(--text-primary);
 	font-family: "Inter", sans-serif;
 	text-align: center;
@@ -60,7 +60,7 @@ input {
 	border-radius: 5px;
 	background: var(--background-column);
 	text-align: center;
-	font-size: 18px; 
+	font-size: 40px; 
 	border: none;
 	outline: none;
 	color: var(--text-primary);
