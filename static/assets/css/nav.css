@@ -71,9 +71,10 @@
 }
 
 .fixed-nav-bar .navbar-img[src='/assets/media/favicon/collapse.png'] {
-    margin-top: 60px;
-    height: 93px;
+    bottom: 6.5px;
+    height: 71px;
     width: 84px;
+    position: absolute;
 }
 
 .fixed-nav-bar-right {
