@@ -21,6 +21,7 @@ if (nav) {
   const AccountIcon = "/assets/media/favicon/account.png";
   const DashboardIcon = "/assets/media/favicon/dashboard.png";
   const CoursesIcon = "/assets/media/favicon/courses.png";
+  const GroupsIcon = "/assets/media/favicon/groups.png";
   const CalendarIcon = "/assets/media/favicon/calendar.png";
   const InboxIcon = "/assets/media/favicon/inbox.png";
   const HistoryIcon = "/assets/media/favicon/history.png";
@@ -41,6 +42,7 @@ if (nav) {
       <a class="navbar-link" href="/./"><img src="${AccountIcon}" alt="Account" class="navbar-img" /></a>
       <a class="navbar-link" href="/./"><img src="${DashboardIcon}" alt="Dashboard" class="navbar-img" /></a>
       <a class="navbar-link" href="/./"><img src="${CoursesIcon}" alt="Courses" class="navbar-img" /></a>
+      <a class="navbar-link" href="/./"><img src="${GroupsIcon}" alt="Groups" class="navbar-img" /></a>
       <a class="navbar-link" href="/./"><img src="${CalendarIcon}" alt="Calendar" Class="navbar-img" /></a>
       <a class="navbar-link" href="/./"><img src="${InboxIcon}" alt="Inbox" Class="navbar-img" /></a>
       <a class="navbar-link" href="/./"><img src="${HistoryIcon}" alt="History" class="navbar-img" /></a>
