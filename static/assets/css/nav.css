@@ -62,11 +62,21 @@
     width: 84px; /* Match the image dimensions */
     height: 68px;
     display: block;
-    margin: -5px 0; /* Adjust spacing between images */
+    margin: -7px 0; /* Adjust spacing between images */
 }
 
 .fixed-nav-bar .navbar-img[src='/assets/media/favicon/main.png'] {
     height: 84px;
+    margin: 0px;
+}
+
+.fixed-nav-bar .navbar-img[src='/assets/media/favicon/groups.png'] {
+    height: 55px;
+    margin: 0px;
+}
+
+.fixed-nav-bar .navbar-img[src='/assets/media/favicon/help.png'] {
+    height: 75px;
     margin: 0px;
 }
 
