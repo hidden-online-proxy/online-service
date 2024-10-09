@@ -31,10 +31,8 @@ body {
 	font-family: "Inter", sans-serif;
 	text-decoration: none;
 	background: var(--background-image);
-	height: 100%;
-	background-position: center;
+	height: 100px;
 	background-repeat: no-repeat;
-	background-size: cover;
 	background-attachment: fixed;
 }
 
