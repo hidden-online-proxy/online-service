@@ -85,13 +85,6 @@
     margin: 0px;
 }
 
-.fixed-nav-bar .navbar-img[src='/assets/media/favicon/collapse.png'] {
-    bottom: 6.5px;
-    height: 71px;
-    width: 84px;
-    position: absolute;
-}
-
 .fixed-nav-bar-right {
     display: flex;
     flex-direction: column;
