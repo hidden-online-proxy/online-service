@@ -72,7 +72,7 @@
 
 .fixed-nav-bar .navbar-img[src='/assets/media/favicon/main.png'] {
     height: 84px;
-    margin: 0px;
+    margin: 5px;
 }
 
 .fixed-nav-bar .navbar-img[src='/assets/media/favicon/groups.png'] {
