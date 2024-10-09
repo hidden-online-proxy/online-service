@@ -8,6 +8,7 @@
 
 .fixed-nav-bar {
     overflow-y: auto;
+    overflow-x: hidden;
     top: -5px;
     left: 0;
     bottom: 0;
@@ -83,6 +84,14 @@
 .fixed-nav-bar .navbar-img[src='/assets/media/favicon/help.png'] {
     height: 75px;
     margin: 0px;
+}
+
+.fixed-nav-bar .navbar-img[src='/assets/media/favicon/account.png'] {
+    margin: 1px;
+}
+
+.fixed-nav-bar .navbar-img[src='/assets/media/favicon/media.png'] {
+    margin: 1px;
 }
 
 .fixed-nav-bar-right {
