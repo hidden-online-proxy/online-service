@@ -34,6 +34,9 @@ body {
 	height: 100px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-size: 1320px 732px;
+	background-position-x: 38px;
+	background-position-y: 25px;
 }
 
 ::placeholder {
