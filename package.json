@@ -10,7 +10,8 @@
     "start": "node index.js",
     "format": "biome format --write .",
     "precommit": "pnpm run format && biome check --write .",
-    "lint": "biome lint --write ."
+    "lint": "biome lint --write .",
+    "build": "echo 'No build step required.'"
   },
   "author": "InterstellarNetwork",
   "license": "GPL-3.0-or-later",
