@@ -1,0 +1,6 @@
+[build]
+command = "npm run build" # Adjust this to match your framework's build command
+publish = "build"         # Adjust this to match your build output folder
+
+[context.production]
+environment = { NODE_VERSION = "18.0.0" } # Optional: Specify Node.js version
